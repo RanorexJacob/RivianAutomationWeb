@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
 id="32093ed9-2224-4a27-89b2-709277e93af1"
@@ -45,6 +45,18 @@ mode="Global">
 				</robustPath>
 			</info>
 		</closeapprecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Automation Complete!"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="51dd7162-f85f-4832-9cd1-8418daf909d7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="8636b7bc-c723-46c3-bdb0-1121bba7adc6"
