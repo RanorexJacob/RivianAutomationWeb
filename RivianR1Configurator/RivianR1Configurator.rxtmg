@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RivianR1Configurator"
+      id="c0a0bc95-6b8f-4bdd-99ce-bc506750d5e3"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RivianR1Configurator"
+      id="c0a0bc95-6b8f-4bdd-99ce-bc506750d5e3"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

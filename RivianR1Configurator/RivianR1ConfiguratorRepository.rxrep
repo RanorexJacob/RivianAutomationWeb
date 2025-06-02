@@ -1,0 +1,212 @@
+﻿<repository
+id="8636b7bc-c723-46c3-bdb0-1121bba7adc6"
+name="RivianR1ConfiguratorRepository">
+	<codegen
+	classname="RivianR1ConfiguratorRepository"
+	namespace="RivianR1Configurator">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="53401a27-61a6-4676-9daf-cf5b623150c2"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="228f874c-4af4-42d7-aee2-5836c61e504f"
+		isrooted="True"
+		name="RivianElectricAdventureVehicles"
+		refimgid="4265d2f7-8848-4d91-a486-e47d0c117f30"
+		refpath="/dom[@domain='rivian.com']"
+		searchtimeout="10000ms"
+		usecache="False">
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="ba7926b1-6788-4604-ba2e-4548b6046d6a"
+			name="RejectAll"
+			refimgid="d59cccd5-261f-4841-807e-302c02157f88"
+			robustPath=""
+			searchtimeout="2000ms">
+				/dom[@domain='rivian.com']//div[#'ketch-consent-banner']//button[@innertext='Reject All']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="1bfbf34e-9d9e-4584-9053-7115286b3221"
+			name="ModelNavSelector"
+			refimgid="7575c452-7421-473f-b25f-349af657bd1c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//header[#'global-nav-bar']/nav//p[@innertext=$Model]
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="b851a1e1-74dd-4f95-b256-9e97b3438269"
+			name="BuyMenu"
+			refimgid="478fd538-b221-472f-8a45-02686d72af25"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//header[#'global-nav-bar']/nav//p[@innertext='Buy']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="2102cb42-b2e1-4d0a-a46d-35c731766fc6"
+			name="BuildButton"
+			refimgid="12cc2523-5cc7-4b17-97cf-1ddd2cc55c6a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//div[#'compare-section']//p[@innertext=$TrimLevel]/..//a[@innertext='Build']
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="b1524cfb-a238-4b89-80fa-d0a1bd541ff9"
+			name="ExteriorPaintColor"
+			refimgid="01c7c2b9-7f82-451f-9fd9-454d6bb7dfa0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//button[@text=$PaintColor]
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="6b810098-2374-4664-bf8c-58c2b7952947"
+			name="InteriorColor"
+			refimgid="07ca46fe-a24d-42ae-81e6-5a45045cf7a6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//button[@text=$InteriorColor]
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="2dfc5107-1817-49f0-b9e3-751aa66f0b8a"
+			name="Next"
+			refimgid="112d1949-e608-409a-8286-7b31304a266f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//button[@innertext&gt;'Next']
+			</item>
+			<item
+			capname="button"
+			id="a9f61703-e800-472e-a985-2d1adb61dc8a"
+			name="AddRemove"
+			refimgid="9af127bb-49dc-4244-98f5-dd3fea840e20"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//h4tag[@innertext=$OptionName]/ancestor::article//button/span[@innertext='Add']/ancestor::button
+			</item>
+			<item
+			capname="button"
+			id="972057df-0a41-4153-8994-e025c4353464"
+			name="AllTerrainAddRemoveButton"
+			refimgid="9af127bb-49dc-4244-98f5-dd3fea840e20"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//h4tag[@innertext='All-Terrain Package']/ancestor::article//button/span[@innertext='Add']/ancestor::button
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="7d5a2672-25cb-4c7f-a3a1-518ff5d1f8fd"
+			name="VehiclePrice"
+			refimgid="1011dd5c-7949-4a99-8e29-b0f91fd69562"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']/body//span[@innertext='Vehicle price']/ancestor::div[@class~'MuiButtonBase-root']/div[@class~'MuiAccordionSummary-expandIconWrapper']/span
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="79e8110f-5b82-435a-97f1-eaacb3c51c27"
+			name="AccessoryPrice"
+			refimgid="8ebc243a-db59-44d8-af44-19a556f98416"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']/body//span[@innertext='Accessories']/../../..//span[@innertext&gt;'$']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="5b8fac29-72de-4b6a-b2c3-4b86768c13ec"
+			name="OrderPrice"
+			refimgid="05ecceca-1f24-4a18-b6dd-62447a5fc627"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//div[@innertext='Order price']/following-sibling::span
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="060068ee-4d52-4fed-9143-38653e3a2e6d"
+			name="CheckoutButton"
+			refimgid="9e2f3f11-9cce-4fa5-bd52-d0707993e474"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='rivian.com']//button[@innertext&gt;'Checkout']
+			</item>
+			<basepath>
+				/dom[@domain='rivian.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="583e693d-15d4-47af-b698-6b6d471e094c"
+		name="Department">
+			Management
+		</var>
+		<var
+		id="9fa23028-d0c8-44c2-9574-1bbe573dc86b"
+		name="Gender">
+			Male
+		</var>
+		<var
+		id="8a747431-c949-46ee-95f6-b0abdd141d6b"
+		name="OptionName">
+			All-Terrain Package
+		</var>
+		<var
+		id="66f46c2d-526d-4b05-a705-16aad5d61845"
+		name="PaintColor">
+			Storm Blue
+		</var>
+		<var
+		id="a21c8d5f-bd6b-4293-a289-346afbea0dc3"
+		name="InteriorColor">
+			Slate Sky + Walnut Wood
+		</var>
+		<var
+		id="4dfa59b9-c6f6-4c54-8bd8-d5f325155cf2"
+		name="Model">
+			R1S
+		</var>
+		<var
+		id="4a262ae0-e29c-49a1-9780-a3ffa7b110b5"
+		name="TrimLevel">
+			R1S Tri
+		</var>
+	</variables>
+</repository>

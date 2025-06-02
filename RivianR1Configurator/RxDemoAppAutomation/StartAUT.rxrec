@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="445e8426-dab2-47c9-8fbc-0d35d44bcb1f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="RivianR1Configurator.RxDemoAppAutomation">
+	</codegen>
+	<variables>
+		<var
+		id="e8ace154-3540-488d-9a99-79195691033a"
+		name="ProcID">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="ProcID">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Users\Jacob Brennecke\Downloads\Mubin\RCT_Learning_Materials\Training Programs\RxDemoApp.exe
+			</filename>
+			<workingdir>
+				C:\Users\Jacob Brennecke\Downloads\Mubin\RCT_Learning_Materials\Training Programs
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="c9667544-64ea-48d1-923f-eb45c8285a16"
+	name="RxDemoAppRepository"
+	relativepath="..\RxDemoAppRepository.rxrep">
+		<codegen
+		classname="RxDemoAppRepository"
+		namespace="RivianR1Configurator">
+		</codegen>
+		<rootfolder
+		id="c0836b50-6db0-4981-bcd4-46d47038a7f5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

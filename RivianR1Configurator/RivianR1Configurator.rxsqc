@@ -1,0 +1,12 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "RivianR1Configurator",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemoAppTestSuite",
+    "RunConfig": "TestRun"
+  }
+]

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b80b7160-eec6-481e-9409-f887c931fde2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="NextNav"
+	namespace="RivianR1Configurator.RivianConfigurator">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Press"
+		enabled="True"
+		optional="False"
+		searchpropertyid="240b2da3-b9e0-49a8-bf73-0b10051fc3f3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2dfc5107-1817-49f0-b9e3-751aa66f0b8a"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='rivian.com']//button[@innertext&gt;'Next']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="b9f35f97-0888-4123-a614-ea54ac82d283">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="8636b7bc-c723-46c3-bdb0-1121bba7adc6"
+	name="RivianR1ConfiguratorRepository"
+	relativepath="..\RivianR1ConfiguratorRepository.rxrep">
+		<codegen
+		classname="RivianR1ConfiguratorRepository"
+		namespace="RivianR1Configurator">
+		</codegen>
+		<rootfolder
+		id="53401a27-61a6-4676-9daf-cf5b623150c2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		NextNav.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

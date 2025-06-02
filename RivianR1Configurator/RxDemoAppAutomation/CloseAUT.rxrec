@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="01c216e5-e551-4f34-a42a-bd2d1e77d666"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="RivianR1Configurator.RxDemoAppAutomation">
+	</codegen>
+	<variables>
+		<var
+		id="6110caee-7a41-4888-b0a4-78619ba9fb27"
+		name="ProcID">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="e7adbdb4-c997-4d3d-90a0-6fef3cb78508">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="ProcID">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c9667544-64ea-48d1-923f-eb45c8285a16"
+	name="RxDemoAppRepository"
+	relativepath="..\RxDemoAppRepository.rxrep">
+		<codegen
+		classname="RxDemoAppRepository"
+		namespace="RivianR1Configurator">
+		</codegen>
+		<rootfolder
+		id="c0836b50-6db0-4981-bcd4-46d47038a7f5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{21A95B8E-7DC5-4016-B7A2-A78151415569}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RivianR1Configurator</RootNamespace>
+    <AssemblyName>RivianR1Configurator</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d6085dc7-8984-4fa2-a643-eb4567cd8571</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>e34f0e41-125f-43ff-b544-a0db45de5127</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>a007e477-1185-4d48-b156-adf646d8c269</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\AddAccessory.cs">
+      <DependentUpon>AddAccessory.rxrec</DependentUpon>
+      <id>8906bf67-4321-403a-9092-63ea04ba5e10</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>ab4dbd27-a3f9-4e39-a2be-69343f4a22d7</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\AddAccessory.UserCode.cs">
+      <DependentUpon>AddAccessory.rxrec</DependentUpon>
+      <id>682218ce-7813-4b14-aa8e-cf5fed44e29e</id>
+      <UserCode>true</UserCode>
+      <BoundTo>ab4dbd27-a3f9-4e39-a2be-69343f4a22d7</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\AddInteriorColorAndNavigation.cs">
+      <DependentUpon>AddInteriorColorAndNavigation.rxrec</DependentUpon>
+      <id>8541f07f-2c30-4975-a6d5-271c541c3296</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>23689974-66a5-4713-b8e8-dd893c3f7546</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\AddInteriorColorAndNavigation.UserCode.cs">
+      <DependentUpon>AddInteriorColorAndNavigation.rxrec</DependentUpon>
+      <id>7fed8826-5a4a-40d1-be0a-15b4a8076f42</id>
+      <UserCode>true</UserCode>
+      <BoundTo>23689974-66a5-4713-b8e8-dd893c3f7546</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\CloseRivianWebTest.cs">
+      <BoundTo>b9ba6fe3-32c3-42f0-b3c9-b447a8db906b</BoundTo>
+      <DependentUpon>CloseRivianWebTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>40ffbffc-7e67-4ee9-ba30-f3b3f69a5223</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\CloseRivianWebTest.UserCode.cs">
+      <BoundTo>b9ba6fe3-32c3-42f0-b3c9-b447a8db906b</BoundTo>
+      <DependentUpon>CloseRivianWebTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1c3cf042-27b0-4053-9191-26b3e29ef3b6</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\ConfigurePaint.cs">
+      <DependentUpon>ConfigurePaint.rxrec</DependentUpon>
+      <id>541c0292-d5c4-4368-b5eb-5dff841350c2</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>737c187d-dea0-49a5-882b-07ffd8dedbaa</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ConfigurePaint.UserCode.cs">
+      <DependentUpon>ConfigurePaint.rxrec</DependentUpon>
+      <id>8bf1d026-0b01-4938-9240-f27ae3631685</id>
+      <UserCode>true</UserCode>
+      <BoundTo>737c187d-dea0-49a5-882b-07ffd8dedbaa</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ConfigurePanel1R1T.cs">
+      <DependentUpon>ConfigurePanel1R1T.rxrec</DependentUpon>
+      <id>a4cd5f03-e9c2-43a2-a97c-25bba404f59b</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>f3375972-a3e4-433e-9662-c5103999e05d</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ConfigurePanel1R1T.UserCode.cs">
+      <DependentUpon>ConfigurePanel1R1T.rxrec</DependentUpon>
+      <id>7b3d4693-a2f4-4f4f-8deb-3e6c836d5fd0</id>
+      <UserCode>true</UserCode>
+      <BoundTo>f3375972-a3e4-433e-9662-c5103999e05d</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\CookieBannerPopupStart.cs">
+      <BoundTo>8596fb45-5621-4b8a-8e67-22414bf1e9b4</BoundTo>
+      <DependentUpon>CookieBannerPopupStart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1994fd5d-468a-4f2c-91e8-cff7773a4e5e</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\CookieBannerPopupStart.UserCode.cs">
+      <BoundTo>8596fb45-5621-4b8a-8e67-22414bf1e9b4</BoundTo>
+      <DependentUpon>CookieBannerPopupStart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9b5b9ceb-0110-463a-b58e-33c3610c57a5</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\CookieBannerPopupStop.cs">
+      <BoundTo>63362add-2069-4b40-9912-294b9263a17f</BoundTo>
+      <DependentUpon>CookieBannerPopupStop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a86bb9f3-a309-4f54-9bd2-a6952a5f1838</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\CookieBannerPopupStop.UserCode.cs">
+      <BoundTo>63362add-2069-4b40-9912-294b9263a17f</BoundTo>
+      <DependentUpon>CookieBannerPopupStop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2875007-1299-4255-9d00-35229d9fdd58</id>
+    </Compile>
+    <Compile Include="RivianConfigurator\NextNav.cs">
+      <DependentUpon>NextNav.rxrec</DependentUpon>
+      <id>b33c22be-8e98-4cc4-855f-c7e7030f0a4c</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>761a5e31-6c92-469b-8e63-be8a3c330e7d</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\NextNav.UserCode.cs">
+      <DependentUpon>NextNav.rxrec</DependentUpon>
+      <id>902c0699-a46d-48a6-86d8-35b8e32e8c29</id>
+      <UserCode>true</UserCode>
+      <BoundTo>761a5e31-6c92-469b-8e63-be8a3c330e7d</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\NextNavigation.cs">
+      <DependentUpon>NextNavigation.rxrec</DependentUpon>
+      <id>35cd0052-4a24-4ba2-88d2-542d673a4398</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>426480b0-53ce-4b48-99c0-49d8249252a8</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\NextNavigation.UserCode.cs">
+      <DependentUpon>NextNavigation.rxrec</DependentUpon>
+      <id>861d61be-1664-4e12-b815-f2924329081f</id>
+      <UserCode>true</UserCode>
+      <BoundTo>426480b0-53ce-4b48-99c0-49d8249252a8</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\RivianNavigation.cs">
+      <DependentUpon>RivianNavigation.rxrec</DependentUpon>
+      <id>f7c6feca-1658-44d2-b1c4-ddb4352b7a64</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>e0cfa815-97c4-48f0-ace5-164483814940</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\RivianNavigation.UserCode.cs">
+      <DependentUpon>RivianNavigation.rxrec</DependentUpon>
+      <id>fb4bdf0b-9b27-486c-84d9-b9040d814e43</id>
+      <UserCode>true</UserCode>
+      <BoundTo>e0cfa815-97c4-48f0-ace5-164483814940</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\StartRivianWebTest.cs">
+      <DependentUpon>StartRivianWebTest.rxrec</DependentUpon>
+      <id>08bb7301-9100-4949-855e-5f21557ee699</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>08647bab-8b36-4839-9cb0-f935ada9be76</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\StartRivianWebTest.UserCode.cs">
+      <DependentUpon>StartRivianWebTest.rxrec</DependentUpon>
+      <id>819af68e-e6f5-4c95-b164-d3bf0388a721</id>
+      <UserCode>true</UserCode>
+      <BoundTo>08647bab-8b36-4839-9cb0-f935ada9be76</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ValidateFinalPriceR1S.cs">
+      <DependentUpon>ValidateFinalPriceR1S.rxrec</DependentUpon>
+      <id>dfe07e97-bc37-46a2-a267-ad7cc5b6dad0</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>cb719a01-8ec4-4cc3-919a-12fb77d58133</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ValidateFinalPriceR1S.UserCode.cs">
+      <DependentUpon>ValidateFinalPriceR1S.rxrec</DependentUpon>
+      <id>d5fc80bf-71b1-4f0e-89b1-f7b6007d40c0</id>
+      <UserCode>true</UserCode>
+      <BoundTo>cb719a01-8ec4-4cc3-919a-12fb77d58133</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ValidateFinalPriceR1T.cs">
+      <DependentUpon>ValidateFinalPriceR1T.rxrec</DependentUpon>
+      <id>211ed140-f888-4994-a62f-7a58757c5a4a</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>465b295d-d0d5-44be-a330-261f03935275</BoundTo>
+    </Compile>
+    <Compile Include="RivianConfigurator\ValidateFinalPriceR1T.UserCode.cs">
+      <DependentUpon>ValidateFinalPriceR1T.rxrec</DependentUpon>
+      <id>052db640-4eeb-4ecd-866b-6c0e33da03f2</id>
+      <UserCode>true</UserCode>
+      <BoundTo>465b295d-d0d5-44be-a330-261f03935275</BoundTo>
+    </Compile>
+    <Compile Include="RivianR1ConfiguratorRepository.cs">
+      <DependentUpon>RivianR1ConfiguratorRepository.rxrep</DependentUpon>
+      <id>8582eae6-a994-4fb0-8b10-00ae15518cdc</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\CloseAUT.cs">
+      <BoundTo>00a234fd-de6a-4301-b1f9-de3b191dbd49</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0da608e0-8d6d-4073-aca5-a57d0a909ba1</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\CloseAUT.UserCode.cs">
+      <BoundTo>00a234fd-de6a-4301-b1f9-de3b191dbd49</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>df6d98fd-05bc-4c45-b6a7-d40069c91a07</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\DataEntry.cs">
+      <BoundTo>d6ab79a8-572f-4af4-8819-c46d358a9d3b</BoundTo>
+      <DependentUpon>DataEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3a09fd8-178e-4263-8e27-b0483d81d1dc</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\DataEntry.UserCode.cs">
+      <BoundTo>d6ab79a8-572f-4af4-8819-c46d358a9d3b</BoundTo>
+      <DependentUpon>DataEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>632f38fd-e2c3-4a20-840a-f670b4b14c4b</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\Navigation.cs">
+      <BoundTo>0ba0fc67-765a-47f4-bcbe-ade63d3a6795</BoundTo>
+      <DependentUpon>Navigation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3048264-45e5-4a8e-a48f-bee4beb7b1ea</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\Navigation.UserCode.cs">
+      <BoundTo>0ba0fc67-765a-47f4-bcbe-ade63d3a6795</BoundTo>
+      <DependentUpon>Navigation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>54f69768-26da-4f75-b1da-a4948d9ce945</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\StartAUT.cs">
+      <BoundTo>2735414b-7d0e-4806-88bf-a4758350f4b4</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2e4f47b-01f6-4855-b401-a17198e3d889</id>
+    </Compile>
+    <Compile Include="RxDemoAppAutomation\StartAUT.UserCode.cs">
+      <BoundTo>2735414b-7d0e-4806-88bf-a4758350f4b4</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>08a683e3-08fd-4edd-806a-59ef4e60b173</id>
+    </Compile>
+    <Compile Include="RxDemoAppRepository.cs">
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+      <DependentUpon>RxDemoAppRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ddd0f8a8-9dec-4425-9cf4-7387f01438ce</id>
+    </Compile>
+    <Compile Include="VehiclePriceCalculator.cs">
+      <id>5703374b-7028-44e6-93b8-c346ef4e3031</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RxDemoAppTestSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>152419a9-b496-41e1-9e36-f7a42ee4a67a</id>
+    </Content>
+    <None Include="app.config">
+      <id>c50668a9-1031-4a35-a002-cc7f1bbbb62b</id>
+    </None>
+    <None Include="RivianConfigurator\AddAccessory.rxrec">
+      <id>ab4dbd27-a3f9-4e39-a2be-69343f4a22d7</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>6305587a-8763-4c70-adea-1feb519fc919</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\AddInteriorColorAndNavigation.rxrec">
+      <id>23689974-66a5-4713-b8e8-dd893c3f7546</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>6fe0aefc-c0a9-4320-9380-618eefe2ee54</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\CloseRivianWebTest.rxrec">
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <id>b9ba6fe3-32c3-42f0-b3c9-b447a8db906b</id>
+      <recordtableid>32093ed9-2224-4a27-89b2-709277e93af1</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\ConfigurePaint.rxrec">
+      <id>737c187d-dea0-49a5-882b-07ffd8dedbaa</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>ada65727-0a8c-495e-9934-a0193b4b3f79</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\ConfigurePanel1R1T.rxrec">
+      <id>f3375972-a3e4-433e-9662-c5103999e05d</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>61388b9f-a6a3-4ccb-b64c-a041e7cb4632</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\CookieBannerPopupStart.rxrec">
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <id>8596fb45-5621-4b8a-8e67-22414bf1e9b4</id>
+      <recordtableid>faa1af28-771b-4ca7-bfa0-3713891016a8</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\CookieBannerPopupStop.rxrec">
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <id>63362add-2069-4b40-9912-294b9263a17f</id>
+      <recordtableid>39407682-21d1-4ff7-8085-41daf80fcd9a</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\NextNav.rxrec">
+      <id>761a5e31-6c92-469b-8e63-be8a3c330e7d</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>b80b7160-eec6-481e-9409-f887c931fde2</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\NextNavigation.rxrec">
+      <id>426480b0-53ce-4b48-99c0-49d8249252a8</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>712333f0-3a31-4351-953d-446a3a759b14</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\RivianNavigation.rxrec">
+      <id>e0cfa815-97c4-48f0-ace5-164483814940</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>0fd5966d-89e1-427a-a6b4-86e5a75987aa</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\StartRivianWebTest.rxrec">
+      <id>08647bab-8b36-4839-9cb0-f935ada9be76</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>54b9bdb8-b602-4c26-bdce-8112eff64016</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\ValidateFinalPriceR1S.rxrec">
+      <id>cb719a01-8ec4-4cc3-919a-12fb77d58133</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>99ea1de2-553b-4a65-956a-09e3f7f94ed3</recordtableid>
+    </None>
+    <None Include="RivianConfigurator\ValidateFinalPriceR1T.rxrec">
+      <id>465b295d-d0d5-44be-a330-261f03935275</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <recordtableid>fbe4c908-84f2-4039-aa62-f603f9a85aeb</recordtableid>
+    </None>
+    <Content Include="RivianR1Configurator.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8ce21625-8d5b-487d-bae0-f21ab5b71a16</id>
+    </Content>
+    <None Include="RivianR1ConfiguratorRepository.rximg">
+      <DependentUpon>RivianR1ConfiguratorRepository.rxrep</DependentUpon>
+      <id>3b90c8b4-ae14-42b5-aa6f-a4c137f42b85</id>
+      <BoundTo>d6085dc7-8984-4fa2-a643-eb4567cd8571</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="RivianR1ConfiguratorRepository.rxrep">
+      <id>d6085dc7-8984-4fa2-a643-eb4567cd8571</id>
+      <repoid>8636b7bc-c723-46c3-bdb0-1121bba7adc6</repoid>
+      <reporootid>53401a27-61a6-4676-9daf-cf5b623150c2</reporootid>
+    </None>
+    <Content Include="RivianR1TOptions.csv">
+      <Link>RivianR1TOptions.csv</Link>
+      <BoundTo>3c8e90fe-bed4-4243-acf6-067fba3046c6</BoundTo>
+      <DependentUpon>RivianR1Configurator.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>6f17f838-a7e5-40b0-be7c-3f1ca2de9b5d</id>
+    </Content>
+    <None Include="RxDemoAppAutomation\CloseAUT.rxrec">
+      <id>00a234fd-de6a-4301-b1f9-de3b191dbd49</id>
+      <recordtableid>01c216e5-e551-4f34-a42a-bd2d1e77d666</recordtableid>
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+    </None>
+    <None Include="RxDemoAppAutomation\DataEntry.rxrec">
+      <id>d6ab79a8-572f-4af4-8819-c46d358a9d3b</id>
+      <recordtableid>8f4d936c-2581-4f96-b72d-786e100a38d9</recordtableid>
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+    </None>
+    <None Include="RxDemoAppAutomation\Navigation.rxrec">
+      <id>0ba0fc67-765a-47f4-bcbe-ade63d3a6795</id>
+      <recordtableid>353595c8-1348-4479-a34e-94696110f049</recordtableid>
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+    </None>
+    <None Include="RxDemoAppAutomation\StartAUT.rxrec">
+      <id>2735414b-7d0e-4806-88bf-a4758350f4b4</id>
+      <recordtableid>445e8426-dab2-47c9-8fbc-0d35d44bcb1f</recordtableid>
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+    </None>
+    <None Include="RxDemoAppRepository.rximg">
+      <BoundTo>9B617A05-A536-43BF-B065-0F3D5F75D7BD</BoundTo>
+      <DependentUpon>RxDemoAppRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>92e7879a-2fae-4a1e-a9cb-cb653b8e7e1c</id>
+    </None>
+    <None Include="RxDemoAppRepository.rxrep">
+      <id>9B617A05-A536-43BF-B065-0F3D5F75D7BD</id>
+      <repoid>c9667544-64ea-48d1-923f-eb45c8285a16</repoid>
+      <reporootid>c0836b50-6db0-4981-bcd4-46d47038a7f5</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RivianR1Configurator.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cbcefce4-dac4-4cf6-adc1-0f7395759b2f</id>
+    </Content>
+    <Content Include="RivianR1Configurator.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>3c8e90fe-bed4-4243-acf6-067fba3046c6</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RxDemoAppAutomation">
+      <id>4804e071-9bff-49f8-84f4-e17cc16eecfb</id>
+    </Folder>
+    <Folder Include="RivianConfigurator">
+      <id>c2b5e1d5-0aff-4ece-8690-448866e4ced6</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{B94542D4-D5E3-40F8-86B1-404B23074926}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

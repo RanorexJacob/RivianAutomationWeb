@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0fd5966d-89e1-427a-a6b4-86e5a75987aa"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RivianNavigation"
+	namespace="RivianR1Configurator.RivianConfigurator">
+	</codegen>
+	<variables>
+		<var
+		id="d187caf3-feae-430b-ba65-261566ced36e"
+		name="Model">
+			R1S
+		</var>
+		<var
+		id="2f11bda2-f301-4a2e-a466-801c74785758"
+		name="basePrice">
+			105900
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Move"
+		button="None"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="19c68061-609f-4ea9-afe0-6d17fd004ecd"
+		sx="213"
+		sy="231"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1bfbf34e-9d9e-4584-9053-7115286b3221"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="194,221,27,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						my-0 font-semibold font-body text-body100 ligatures-on leading-none
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						R1T
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						font-body font-semibold leading-none ligatures-on my-0 text-body100
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='rivian.com']//header[#'global-nav-bar']/nav/div[1]/ul/li[1]/div/ul/li[3]/a[@href='https://rivian.com/r1t']/p[@innertext='R1T']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="16f43e4e-0338-40b7-bda4-bc4053d7b094">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8AF8DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACikLelJuNADqKZuNG40APopm40bjQA+im7jShs0ALRRRQAUjGlprdaAEqO4cxW8ki4yqFhn2FSV
+Def8eU//AFzb+VJ7FRV5IoQ3epzRCSO3iZD0Ocf1p/nat/z6xfn/APZVkv8AZd9h9u/1Plvnr13H
+HTmrVhCLhLxLSWaKyOPLI7/3gM9qlK6vc3qVFGbiorT+u5c87Vv+fWL8/wD7KmTXepwxGSS3iVB1
+Oc/1qnb2VvP4cE0se6SON9rZPHJp6WVvDoInjj2yyRpubJ55FDVle4U6ilNRcVr/AF3Nq3cy28cj
+YyyBjj3FSVDZ/wDHlB/1zX+VTVS2MJaSY5TkUtNXrTqZIU1utOoIyKAGVDef8eU//XNv5VMRimui
+yIyMMqwwR7UMcXZpmPYJB/otw9zGjRK6mMkZOSferNottatOEvIvKlbcqbh8hPXnNS/2XZf88f8A
+x5v8ajuLCygtpZvs+7y0LY3sM4GfWoXMlY3k6MpOWuvp/mUWtbdLMW/mR3Pk20zBhjg5Ug+1LcXS
+RaWbN4p0aMKm504JGDjgnnHNWLazV5yot/Kjlt3Uukm9WB24wT369q0jbIZfMyc+Z5mPfZt/lVWu
+rMy5lGd49COyObKAj/nmv8qnqvp//IOtv+uSfyFWAM0yW7u4q06iigQUUUUAFJgelLRQAm0UbRS0
+UAZ5f+y5G3jFk5+UqP8AUn0PsT+XSln1OJo2Szb7TOw+VY+ce5PYVfooAitoRBbRRZ3eWgXOMZwM
+VLRRQAUUUUAf/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f4ec2ef3-a195-45f4-950c-f13a0768ad39">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b851a1e1-74dd-4f95-b256-9e97b3438269"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='rivian.com']//header[#'global-nav-bar']/nav//p[@innertext='Buy']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="d6bf177d-806a-43d2-8c02-6eb5f2baf654">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="PerformClick"
+		enabled="True"
+		optional="False"
+		searchpropertyid="de60e27c-c464-4eae-992f-7e52829fb53f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2102cb42-b2e1-4d0a-a46d-35c731766fc6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='rivian.com']//div[#'compare-section']//p[@innertext=$TrimLevel]/..//a[@innertext='Build']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="cc69408b-f3f1-4b25-b59e-3e79a5ccb573">
+			</arguments>
+		</invokeactionrecorditem>
+		<userrecorditem
+		classname="VehiclePriceCalculator"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="InitializeBasePrice"
+		namespace="RivianR1Configurator"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="19bc3a19-827e-4e91-9d01-2c763821dd2f">
+				<argument
+				argname="basePrice"
+				id="9a2748b6-92ce-4793-9a29-9f78954946d2"
+				variable="basePrice">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8636b7bc-c723-46c3-bdb0-1121bba7adc6"
+	name="RivianR1ConfiguratorRepository"
+	relativepath="..\RivianR1ConfiguratorRepository.rxrep">
+		<codegen
+		classname="RivianR1ConfiguratorRepository"
+		namespace="RivianR1Configurator">
+		</codegen>
+		<rootfolder
+		id="53401a27-61a6-4676-9daf-cf5b623150c2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RivianNavigation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

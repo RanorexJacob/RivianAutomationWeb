@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="32093ed9-2224-4a27-89b2-709277e93af1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseRivianWebTest"
+	namespace="RivianR1Configurator.RivianConfigurator">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="8b990799-553e-4c31-9e52-e0c44436bdba">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="228f874c-4af4-42d7-aee2-5836c61e504f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='rivian.com']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8636b7bc-c723-46c3-bdb0-1121bba7adc6"
+	name="RivianR1ConfiguratorRepository"
+	relativepath="..\RivianR1ConfiguratorRepository.rxrep">
+		<codegen
+		classname="RivianR1ConfiguratorRepository"
+		namespace="RivianR1Configurator">
+		</codegen>
+		<rootfolder
+		id="53401a27-61a6-4676-9daf-cf5b623150c2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseRivianWebTest.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
